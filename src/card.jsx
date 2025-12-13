@@ -3,13 +3,9 @@ import './card.css'
 
 const url = 'https://pokeapi.co/api/v2/pokemon/';
 
-function Card() {
+function Card(props) {
 
     const [pokemon, setPokemon] = useState(null);
-
-    const setPokemonObject = (obj) => {
-        setPokemon(obj);
-    }
 
     const getRandomNumber = () => {
         const min = 0;
@@ -25,11 +21,21 @@ function Card() {
         return pokemonTypes[getRandomNumber()];
     }
 
+    const fetchPokemonData = async (name) => {
+        try {
+            const pokemon = await fetch(url + name);
+            const pokemonData = await pokemon.json();
+            return pokemonData;
+        }
+        catch(e) {
+            console.log(e);
+        }
+    }
+
     useEffect(() => {
         const getPokemon = async (name) => {
             try {
-                const pokemon = await fetch(url + name);
-                const pokemonData = await pokemon.json();
+                const pokemonData = await fetchPokemonData(name);
                 setPokemon(pokemonData);
             }
             catch(e) {
@@ -39,8 +45,23 @@ function Card() {
         getPokemon(getPokemonNames());
     }, []);
 
+    useEffect(() => {
+        const fetchData = async () => {
+            const data = await fetchPokemonData(getPokemonNames());
+            setPokemon(data);
+        }
+        fetchData();
+    }, [props.shuffleTrigger]);
+
+    const handelClick = async () => {
+        props.handleScore(pokemon.name);
+        const name = getPokemonNames();
+        const newData = await fetchPokemonData(name);
+        setPokemon(newData);
+    }
+
     return (
-        <div className='card'>
+        <div onClick={handelClick} className='card'>
             {pokemon && (
                 <>
                     <img className='cardImg' src={pokemon.sprites.front_default} alt="card pic"></img>
