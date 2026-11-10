@@ -47,6 +47,8 @@ A dynamic, interactive **React-based memory game** built to demonstrate state ma
 
 ---
 
+<img width="200" height="100" alt="Armstrong_Stacked" src="https://github.com/user-attachments/assets/f899d005-b9a1-419b-a11f-4de111611034" />
+
 ## Installation & Usage
 
 ```bash
@@ -61,5 +63,3 @@ npm install
 
 # Start the development server
 npm start
-
-<img width="200" height="100" alt="Armstrong_Stacked" src="https://github.com/user-attachments/assets/f899d005-b9a1-419b-a11f-4de111611034" />
