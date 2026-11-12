@@ -1,3 +1,5 @@
+<a href="https://github.com/alexfarm08"><img width="200" height="100" alt="Armstrong_Stacked" src="https://github.com/user-attachments/assets/f899d005-b9a1-419b-a11f-4de111611034" /></a>
+
 # Pokémon Memory Game
 
 A dynamic, interactive **React-based memory game** built to demonstrate state management, component architecture, and API integration skills. Players test their memory by clicking unique Pokémon cards without repeating any previous selections, while the app tracks scores and dynamically shuffles the cards.
@@ -46,8 +48,6 @@ A dynamic, interactive **React-based memory game** built to demonstrate state ma
 - Clean and maintainable **code organization**.  
 
 ---
-
-<img width="200" height="100" alt="Armstrong_Stacked" src="https://github.com/user-attachments/assets/f899d005-b9a1-419b-a11f-4de111611034" />
 
 ## Case Study
 
