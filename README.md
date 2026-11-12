@@ -60,7 +60,7 @@ The inspirations for this work to again practice my skills that I learned in rea
 ### Process
 This project started by trying to understand what the project requirements were. Next I knew that I just wanted a simple page that displayed the cards so I didn't do any wireframes or sketches. After that I built the card component and the main page. Next I found an API I wanted to use for the images on the cards and set up the functionality to make the api call.
 
-### Process
+### Results
 The results of this project was a memory card game that displays good practice in react and fetching data from an api.
 
 ## Installation & Usage
