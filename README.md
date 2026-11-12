@@ -49,6 +49,20 @@ A dynamic, interactive **React-based memory game** built to demonstrate state ma
 
 <img width="200" height="100" alt="Armstrong_Stacked" src="https://github.com/user-attachments/assets/f899d005-b9a1-419b-a11f-4de111611034" />
 
+## Case Study
+
+### Objective
+For this project the goal of the project was to build a memory card game where you try and click on different cards each time and the webpage tracks your current score in the game and your best score you have gotten.
+
+### Synoposis
+The inspirations for this work to again practice my skills that I learned in react and Api usage. 
+
+### Process
+This project started by trying to understand what the project requirements were. Next I knew that I just wanted a simple page that displayed the cards so I didn't do any wireframes or sketches. After that I built the card component and the main page. Next I found an API I wanted to use for the images on the cards and set up the functionality to make the api call.
+
+### Process
+The results of this project was a memory card game that displays good practice in react and fetching data from an api.
+
 ## Installation & Usage
 
 ```bash
